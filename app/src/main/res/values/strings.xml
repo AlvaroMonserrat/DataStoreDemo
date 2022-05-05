@@ -2,4 +2,5 @@
     <string name="app_name">DataStoreDemo</string>
     <string name="data_store">DATA STORE</string>
     <string name="read">Read</string>
+    <string name="search">Search</string>
 </resources>

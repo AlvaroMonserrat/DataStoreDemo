@@ -1,5 +1,6 @@
 package com.rrat.datastoredemo
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -32,7 +33,15 @@ class MainActivity : AppCompatActivity() {
                 settingPrefs.saveIdVendedor(1000)
             }
         }
+
+        binding.btnSearch.setOnClickListener {
+            intent = Intent(this, SearchActivity::class.java)
+            startActivity(intent)
+        }
+
         observeIdVendedor()
+
+
     }
 
     private fun observeIdVendedor()
