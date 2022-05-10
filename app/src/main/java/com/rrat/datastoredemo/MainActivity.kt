@@ -39,9 +39,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        binding.btnResource.setOnClickListener {
+            intent = Intent(this, ResourceActivity::class.java)
+            startActivity(intent)
+        }
+
         observeIdVendedor()
-
-
     }
 
     private fun observeIdVendedor()
